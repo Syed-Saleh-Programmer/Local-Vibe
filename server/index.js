@@ -8,7 +8,7 @@ const app = express();
 // CORS — allow the Vercel frontend and localhost for dev
 const ALLOWED_ORIGINS = process.env.CLIENT_URL
   ? process.env.CLIENT_URL.split(',').map(s => s.trim())
-  : ['http://localhost:5173', 'https://localhost:5173'];
+  : ['http://localhost:5173', 'https://localhost:5173', 'https://nzt5fddp-5173.inc1.devtunnels.ms'];
 
 app.use(cors({
   origin: ALLOWED_ORIGINS,
